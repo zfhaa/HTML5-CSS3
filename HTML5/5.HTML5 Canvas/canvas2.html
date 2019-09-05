@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 利用canvas加载图片 -->
+
+    <canvas id="canvas" height="1000" width="1000" style="border: 1px solid black">
+        您的浏览器不支持canvas标签
+    </canvas>
+
+    <img id="ymimg" src="./img/ym.jpg" alt="">
+    <button>加载图片</button>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+
+        var btn = document.querySelector("button");
+        var img = document.getElementById("ymimg");
+
+        btn.onclick = function () {
+
+            context.drawImage(img, 100, 200);
+        }
+    </script>
+</body>
+
+</html>

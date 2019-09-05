@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //保存数据
+        localStorage.setItem('name', '实训在线')
+
+        //获取数据
+        var name = localStorage.getItem('name');
+        document.write('name=' + name)
+
+        //删除数据
+        localStorage.removeItem('name');
+    </script>
+</body>
+
+</html>

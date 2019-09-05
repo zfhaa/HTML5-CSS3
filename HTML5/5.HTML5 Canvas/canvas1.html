@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 利用canvas进行文字处理 -->
+    <canvas id="canvas" height="300" width="500" style="border: 1px solid black">
+        您的浏览器不支持canvas标签
+    </canvas>
+
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+
+        context.font = "20px sans-serif";
+        context.fillText("迪丽热巴", 20, 30);
+
+
+        context.font = "50px Arial";
+        context.strokeText("迪丽热巴", 100, 100);
+
+
+    </script>
+</body>
+
+</html>

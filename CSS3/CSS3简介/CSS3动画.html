@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    div{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border: 1px solid #aaa;
+
+        animation-name: animation-1;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        /* 返回效果 */
+        animation-direction: alternate; 
+        /* 无限效果 */
+        animation-play-state: running;
+    }
+
+    @keyframes animation-1{
+        from{
+            background: blue;
+        }
+        to{
+            background: greenyellow;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>迪丽热巴</div>
+</body>
+</html>

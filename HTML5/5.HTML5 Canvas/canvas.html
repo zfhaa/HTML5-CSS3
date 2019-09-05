@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- 定义canvas第一种方法 -->
+
+    <canvas id="canvas" height="500" width="800" style="border: 1px solid black">
+        您的浏览器不支持canvas标签
+    </canvas>
+
+
+<!-- 定义canvas第二种方法 -->
+    <!-- <script>
+    var canvas = document.createElement("canvas");
+    canvas.id="canvas"
+    canvas.width="400"
+    canvas.height="800"
+    document.body.appendChild(canvas);
+    </script> -->
+<script>
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
+//画一个直线
+//起点
+context.moveTo(0,0);
+//终点
+context.lineTo(100,200);
+//颜色
+context.strokeStyle="red";
+//宽度
+context.lineWidth = 5;
+//开始绘制
+context.stroke();
+
+//画一个绿色矩形
+context.fillStyle="green";
+context.fillRect(200,200,400,200); //左上角x:200 y:200  又下脚x:400 y:200
+
+//绘制圆形
+context.beginPath();
+context.arc(300,100,60,0,2*Math.PI);  //x:300 y:100 半径：60
+context.closePath();
+
+context.fillStyle = "blue";
+context.fill();
+context.stroke();
+
+</script>
+
+</body>
+</html>
