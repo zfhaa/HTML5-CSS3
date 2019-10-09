@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+div{
+    width: 100px;
+    height: 100px;
+    margin: 200px;
+    background-color:#008c8c;
+    /* 旋转30度 */
+    /* transform: rotate(30deg);  */
+    /* 位移 */
+    /* transform: translate(50px,300px) */
+    /* 倾斜 */
+    transform: skew(30deg,20deg);
+    /* 过渡 */
+    transition: 0.3s;
+}
+div:hover{
+    /* 放大1.5倍 */
+    transform: scale(1.5);
+}
+</style>
+<body>
+    <div>hello</div>
+</body>
+</html>
